@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>安装 | v-ui</title>
+    <meta name="description" content="行你所行">
+    
+    
+    <link rel="preload" href="/assets/css/0.styles.1f52ee9a.css" as="style"><link rel="preload" href="/assets/js/app.6a4b49ec.js" as="script"><link rel="preload" href="/assets/js/2.ae91c695.js" as="script"><link rel="preload" href="/assets/js/13.ab9d33a3.js" as="script"><link rel="prefetch" href="/assets/js/10.a1c7e87a.js"><link rel="prefetch" href="/assets/js/11.7f0cc6e1.js"><link rel="prefetch" href="/assets/js/12.320cc10d.js"><link rel="prefetch" href="/assets/js/14.8826e261.js"><link rel="prefetch" href="/assets/js/3.cbb12bbe.js"><link rel="prefetch" href="/assets/js/4.18c0b6c2.js"><link rel="prefetch" href="/assets/js/5.be19f5b0.js"><link rel="prefetch" href="/assets/js/6.a1fcc988.js"><link rel="prefetch" href="/assets/js/7.94f49d62.js"><link rel="prefetch" href="/assets/js/8.e82e6ae1.js"><link rel="prefetch" href="/assets/js/9.2d440451.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.1f52ee9a.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar custom-component"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">v-ui</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/guide/" class="nav-link router-link-exact-active router-link-active">指南</a></div><div class="nav-item"><a href="/components/" class="nav-link">组件</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/guide/" class="nav-link router-link-exact-active router-link-active">指南</a></div><div class="nav-item"><a href="/components/" class="nav-link">组件</a></div> <!----></nav>  <!----> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="安装"><a href="#安装" class="header-anchor">#</a> 安装</h1> <div class="language-JavaScript extra-class"><pre class="hljs"><code>npm i @jsliushen/v-ui -S
+</code></pre></div><h1 id="整体引入"><a href="#整体引入" class="header-anchor">#</a> 整体引入</h1> <div class="language-JavaScript extra-class"><pre class="hljs"><code><span class="hljs-keyword">import</span> Vue <span class="hljs-keyword">from</span> <span class="hljs-string">'vue'</span>
+<span class="hljs-keyword">import</span> VUI <span class="hljs-keyword">from</span> <span class="hljs-string">'@jsliushen/v-ui'</span>
+<span class="hljs-keyword">import</span> <span class="hljs-string">'@jsliushen/v-ui/lib/index.css'</span>
+
+Vue.use(VUI)
+</code></pre></div><h1 id="按需引入"><a href="#按需引入" class="header-anchor">#</a> 按需引入</h1> <h2 id="方案一"><a href="#方案一" class="header-anchor">#</a> 方案一</h2> <div class="language-JavaScript extra-class"><pre class="hljs"><code><span class="hljs-keyword">import</span> Vue <span class="hljs-keyword">from</span> <span class="hljs-string">'vue'</span>
+<span class="hljs-keyword">import</span> { Button } <span class="hljs-keyword">from</span> <span class="hljs-string">'@jsliushen/v-ui'</span>
+<span class="hljs-keyword">import</span> <span class="hljs-string">'@jsliushen/v-ui/lib/button/index.css'</span>
+Vue.use(Button)
+</code></pre></div><h2 id="方案二"><a href="#方案二" class="header-anchor">#</a> 方案二</h2> <p>安装 <a href="https://github.com/ElementUI/babel-plugin-component" target="_blank" rel="noopener noreferrer"><code>babel-plugin-component</code><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <div class="language-JavaScript extra-class"><pre class="hljs"><code>npm i babel-plugin-component -D
+</code></pre></div><p>配置.babelrc</p> <div class="language-javaScript extra-class"><pre class="hljs"><code>{
+  <span class="hljs-comment">//......</span>
+  <span class="hljs-comment">//其他配置</span>
+  <span class="hljs-comment">//......</span>
+  <span class="hljs-string">&quot;plugins&quot;</span>: [
+    [
+      <span class="hljs-string">&quot;component&quot;</span>,
+      {
+        <span class="hljs-string">&quot;libraryName&quot;</span>: <span class="hljs-string">&quot;@jsliushen/v-ui&quot;</span>,
+        <span class="hljs-string">&quot;libDir&quot;</span>: <span class="hljs-string">&quot;lib&quot;</span>,
+        <span class="hljs-string">&quot;style&quot;</span>: <span class="hljs-string">&quot;index.css&quot;</span>
+      }
+    ]
+  ]
+}
+</code></pre></div><p>使用时直接引入组件，不再需要显示的引入css</p> <div class="language-JavaScript extra-class"><pre class="hljs"><code><span class="hljs-keyword">import</span> Vue <span class="hljs-keyword">from</span> <span class="hljs-string">'vue'</span>
+<span class="hljs-keyword">import</span> { Button } <span class="hljs-keyword">from</span> <span class="hljs-string">'@jsliushen/v-ui'</span>
+
+Vue.use(Button)
+</code></pre></div><h2 id="cdn引入"><a href="#cdn引入" class="header-anchor">#</a> cdn引入</h2> <div class="language-JavaScript extra-class"><pre class="hljs"><code>&lt;script src=<span class="hljs-string">&quot;https://unpkg.com/@jsliushen/v-ui/lib/v-ui.js&quot;</span>&gt;<span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span></span>
+</code></pre></div><h3 id="cdn-demo"><a href="#cdn-demo" class="header-anchor">#</a> cdn demo</h3> <div class="language-html extra-class"><pre class="hljs"><code><span class="hljs-meta">&lt;!DOCTYPE html&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">&quot;en&quot;</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">&quot;UTF-8&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;viewport&quot;</span> <span class="hljs-attr">content</span>=<span class="hljs-string">&quot;width=device-width, initial-scale=1.0&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">http-equiv</span>=<span class="hljs-string">&quot;X-UA-Compatible&quot;</span> <span class="hljs-attr">content</span>=<span class="hljs-string">&quot;ie=edge&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>vui<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">&quot;stylesheet&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://unpkg.com/@jsliushen/v-ui/lib/index.css&quot;</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;app&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">v-button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;primary&quot;</span> @<span class="hljs-attr">click</span>=<span class="hljs-string">&quot;handleClick&quot;</span>&gt;</span>click me<span class="hljs-tag">&lt;/<span class="hljs-name">v-button</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+  <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://unpkg.com/vue/dist/vue.js&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://unpkg.com/@jsliushen/v-ui/lib/v-ui.umd.js&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+
+  <span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="actionscript">
+    <span class="hljs-keyword">new</span> Vue({
+      el: <span class="hljs-string">'#app'</span>,
+      data: <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">return</span> { 
+          message: <span class="hljs-string">'hello VUI'</span> 
+        }
+      },
+
+      methods: {
+        handleClick() {
+          alert(<span class="hljs-keyword">this</span>.message)
+        }
+      }
+    })
+  </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.6a4b49ec.js" defer></script><script src="/assets/js/2.ae91c695.js" defer></script><script src="/assets/js/13.ab9d33a3.js" defer></script>
+  </body>
+</html>
